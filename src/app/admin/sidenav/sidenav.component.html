@@ -1,0 +1,77 @@
+<div class="sidebar-content">
+    <div class="sidebar-brand">
+
+        <a [routerLink]="['/admin']">
+            <div class="float-left"><img src="../../assets/images/softforceLogo.png" alt="softforce"
+                    class="img-responsive logo-mg"></div>
+            <div class="float-left title-pad">
+                Admin Portal<br>
+                Softforce Apps
+            </div>
+        </a>
+        <div id="close-sidebar">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+    <div class="fa-div-pad  fa-div-pad-n">
+        <a [routerLink]="['/admin/submit-app']">
+            <i class="fa fa-paperclip fa-icon-bg"></i>
+
+            Submit New App
+
+        </a>
+    </div>
+    <div class="sidebar-menu">
+        <ul>
+
+            <li class="sidebar-dropdown">
+                <a href="javascript:void(0)">
+                    <i class="fa fa-copy"></i>
+                    Apps
+
+                </a>
+                <div class="sidebar-submenu">
+                    <ul>
+                        <li>
+                            <a [routerLink]="['/admin']">App 1
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">App 2</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">App 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="fa-div-pad  fa-div-pad-n">
+        <a href="javascript:void(0)">
+            <i class="fa fa-paperclip fa-icon-bg"></i>
+
+            Service Request
+
+        </a>
+    </div>
+    <div class="fa-div-pad  fa-div-pad-n">
+        <a href="javascript:void(0)">
+            <i class="fa fa-paperclip fa-icon-bg"></i>
+
+            Settings
+
+        </a>
+    </div>
+    <div class="fa-div-pad fa-div-pad-n">
+        <a [routerLink]="['/login']">
+            <i class="fa fa-sign-out-alt fa-icon-bg"></i>
+            Logout
+
+        </a>
+    </div>
+    <!-- sidebar-menu  -->
+</div>

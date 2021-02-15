@@ -1,0 +1,71 @@
+<div id="chatContainer">
+    <section class="left">
+      <div id="sidebar">
+        <div id="sidebarHeader" class="row">
+          <div class="col-3 col-sm-4"><img src='https://softforceapps.com/wp-content/uploads/2020/11/softforceLogo-1-150x150.png' alt='profilpicture'></div>  
+          <div class="col-3 col-sm-4"><p id="title">Soft Bot</p></div>      
+      </div>
+  
+  
+  
+        <div id="searchBox">
+          <img width="13" src="../assets/images/searchIcon.png" />
+          <input class="searchbar" type="text" placeholder="Search or start the new chat" />
+        </div>
+        <div id="sidebarContent" >
+          <div id="sidebarContentMenu" *ngFor="let users of scopes; let index=index;">
+            <div class="contact" id="index" (click)="getChatHistory(users.id,users.name)">
+              <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAFdnwsj9XmZPJzlH-h95QvIm7QjUsIlHkpQ&usqp=CAU' alt='profilpicture'>
+              <div class="contact-preview">
+                <div class="contact-text">
+                  <p> {{users.name}}</p>
+                </div>
+              </div>
+              <div class="contact-time">
+                <p>{{users.TimeStamp *1000 | date:'medium'}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="right">
+      <div class="chat-head">
+        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAFdnwsj9XmZPJzlH-h95QvIm7QjUsIlHkpQ&usqp=CAU' alt="profilepicture">
+        <div class="chat-name">
+          <h1 class="font-name">{{userName}}</h1>
+          <p class="font-online"></p>
+        </div>
+      </div>
+      <div class="wrap-chat">
+        <div class="chat" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+          <div *ngFor="let chats of chatHistory; let index = index;">
+            <div class="chat-bubble you" *ngIf="chats.EventType == 'user'">
+              <div class="your-mouth"></div>
+              <div class="content">{{chats.message}}</div>
+              <div class="time">{{chats.timestamp*1000 | date:'medium'}}</div>
+            </div>
+            <div class="chat-bubble me" *ngIf="chats.EventType == 'bot'">
+              <div class="my-mouth"></div>
+              <div class="content">{{chats.message}}</div>
+              <div class="time">{{chats.timestamp *1000 | date:'medium'}}</div>
+            </div>
+          </div>
+  
+  
+        </div>
+        <div class="information" style="display: none;"></div>
+      </div>
+      <!-- <div class="wrap-message">
+        <i class="fa fa-smile-o fa-lg" aria-hidden="true"></i>
+        <div class="message">
+          <input type="text" class="input-message" placeholder="">
+        </div>
+        <i class="fa fa-microphone fa-lg" aria-hidden="true"></i>
+      </div> -->
+  
+    </section>
+  
+    <div id="chat"></div>
+  
+  </div>

@@ -1,0 +1,227 @@
+<main class="page-content">
+
+    <div class="container-fluid">
+        <div class="hdr-topPad">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-lg-12">
+
+                    <div class="card card-nav-tabs">
+                        <div class="card-header card-header-primary">
+                            <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                            <div class="nav-tabs-navigation">
+                                <div class="nav-tabs-wrapper">
+                                    <ul class="nav nav-tabs" data-tabs="tabs">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#profile" data-toggle="tab"> Profile
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link " href="#chatlog" data-toggle="tab"> Chat Log </a>
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link " href="#analytics" data-toggle="tab"> Analytics </a>
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link " href="#models" data-toggle="tab">
+
+                                                Models
+                                            </a>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body ">
+                            <div class="tab-content">
+                                <div class="tab-pane active nav-panel-pad text-center" id="profile">
+                                    <div class="comman">
+                                        <div class="tab-heading">
+                                            <h1> My Bot</h1>
+                                        </div>
+                                        <div class="p-t-20">
+                                            <div class="row">
+
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2">
+                                                    <label class="label-title">
+                                                        App Name
+                                                    </label>
+
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                                    <div class="wrap-input validate-input m-b-20"
+                                                        data-validate="Enter username or email">
+                                                        <input class="form-control appinputs" type="text"
+                                                            name="username" value="Cyberior" placeholder="Username or email">
+                                                        <span class="focus-input"></span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="p-t-20">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2">
+                                                    <label class="label-title">
+                                                        App Desc
+                                                    </label>
+
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                                    <div class="wrap-input validate-input m-b-20"
+                                                        data-validate="Enter username or email">
+                                                        <input class="form-control appinputs " type="text"
+                                                            name="username" value="Virtual Assistant for cyberior accoutn holders" placeholder="Username or email">
+                                                        <span class="focus-input"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-t-20">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2">
+                                                    <label class="label-title">
+                                                        App Icon
+                                                    </label>
+
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-1">
+
+                                                    <img src="../../assets/images/bot_icon.jpg"
+                                                        class="rounded-circle apapp_img">
+
+
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+                                                    <div class="form-group">
+                                                        <input type="file" name="file" id="file" class="input-file">
+                                                        <label for="file"
+                                                            class="btn btn-tertiary js-labelFile text-left">
+
+                                                            <span class="js-fileName">Choose a file</span>
+                                                            <i class="icon fa fa-check upload-icon"></i>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-t-20">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2">
+                                                    <label class="label-title">
+                                                        Status
+                                                    </label>
+
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                                    <div class="appactive">
+                                                        Acvite
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-t-50">
+                                            <div class="modal-footer p-t-50">
+                                                <div class="disflex">
+                                                    <div class="row">
+                                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                            <button type="button" id="prevBtn"
+                                                                class="btn proceed-globel ">Cancel</button>
+                                                        </div>
+                                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                            <button type="button" (click)="submit()" id="nextBtn"
+                                                                class="btn next-globel">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane nav-panel-pad p-t-0" id="chatlog">
+                                    <div class="form-group">
+                                        <div class="whtauploadpad">
+                                            <div class="row">
+
+                                                <div class="col-xs-12 col-md-6 col-lg-12">
+
+                                                    <div class="row justify-content-center h-100">
+                                                        <app-chatlogs class="app-chat-log"></app-chatlogs>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane  nav-panel-pad text-center" id="analytics">
+                                    <div class="comman">
+                                        <div class="tab-heading">
+                                            <h1> Analytics</h1>
+                                        </div>
+                                        <img src="../../assets/images/growthgraph.png" alt="softforce"
+                                            class="img-responsive  ">
+                                    </div>
+                                </div>
+                                <div class="tab-pane nav-panel-pad" id="models">
+                                    <div class="comman">
+                                        <div class="tab-heading">
+                                            <h1> Models</h1>
+                                        </div>
+                                        <div class="p-t-20">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Model</th>
+                                                        <th>Date </th>
+                                                        <th>Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Model 1</td>
+                                                        <td>09-02-2021</td>
+                                                        <td>
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" class="custom-control-input" name="active_model"
+                                                                    id="customCheck1" >
+                                                                <label class="custom-control-label"
+                                                                    for="customCheck1"></label>
+                                                            </div>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Model 2</td>
+                                                        <td>14-02-2021</td>
+                                                        <td>
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" class="custom-control-input" name="active_model"
+                                                                    id="customCheck2" checked>
+                                                                <label class="custom-control-label"
+                                                                    for="customCheck2"></label>
+                                                            </div>
+
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
