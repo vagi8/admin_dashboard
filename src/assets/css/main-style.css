@@ -248,6 +248,9 @@ body {
   text-align: center;
   border-radius: 4px;
 }
+.sidebar-wrapper .sidebar-menu ul li a.select {
+  background: #ffbb03;
+}
 
 .sidebar-wrapper .sidebar-menu ul li a:hover > i::before {
   display: inline-block;
@@ -483,7 +486,7 @@ padding: 5px 0px 0px 18px;}
 .chiller-theme .sidebar-wrapper .sidebar-header .user-info,
 .chiller-theme .sidebar-wrapper .sidebar-brand>a:hover,
 .chiller-theme .sidebar-footer>a:hover i {
-    color: #b8bfce;
+  color: #ffffff;
 }
 
 .page-wrapper.chiller-theme.toggled #close-sidebar {
